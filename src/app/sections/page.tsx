@@ -2,6 +2,15 @@ import Image from "next/image";
 import React from "react";
 import { Progress } from "@/components/ui/progress";
 import { Sections } from "../../../data";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Link from "next/link";
 
 function SectionsPage() {
   return (
@@ -40,16 +49,29 @@ function SectionsPage() {
               {data.isContined ? (
                 <>
                   {" "}
-                  <button className="bg-white text-black rounded-md p-2  ">
+                  <Link
+                    href={`/section/${data.sectionNumber}`}
+                    className="bg-white text-black rounded-md p-2  "
+                  >
                     Continue
-                  </button>
+                  </Link>
                   <button>See details</button>
                 </>
               ) : (
                 <>
-                  <button className="bg-white text-blue-400 rounded-md p-2  ">
-                    Jump here
-                  </button>
+                  <Dialog>
+                    <DialogTrigger>
+                      <button className="bg-white text-blue-400 rounded-md p-2  ">
+                        Jump here
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="p-5">
+                      <DialogHeader>
+                        <DialogTitle>Please finish previous parts.</DialogTitle>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
+
                   <button className="text-blue-400">See details</button>
                 </>
               )}

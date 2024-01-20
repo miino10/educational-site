@@ -1,13 +1,5 @@
 import Image from "next/image";
 import React from "react";
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuLabel,
-//   DropdownMenuSeparator,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
 
 import {
   Select,
@@ -42,9 +34,9 @@ function SidebarLeft() {
             </SelectItem>
 
             <div>
-              <button className="bg-green-200 p-2 w-full">
-                <Link href={"/invoice"}> Add new course</Link>
-              </button>
+              <Link href={"/invoice"} className="bg-green-200 p-2 w-full">
+                Add new course
+              </Link>
             </div>
           </SelectContent>
         </Select>

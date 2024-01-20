@@ -26,8 +26,7 @@ const MenuLinks: React.FC<{ item: MenuItems }> = ({ item }) => {
     >
       <div className="flex gap-2 items-center w-full p-2">
         <Image src={item.image} alt={""} width={50} height={50} />
-        <p className="md:flex lg:text-lg lg:font-medium text-black">
-          {" "}
+        <p className="hidden md:flex lg:text-lg lg:font-medium text-black">
           {item.title}
         </p>
       </div>

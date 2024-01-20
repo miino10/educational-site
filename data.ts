@@ -8,6 +8,29 @@ export const Sections = [
     isContined: true,
     jobNumber: 5,
     jobDone: 3,
+    chapters: [
+      {
+        id: 1,
+        name: "Chapter 1",
+        isContinued: true,
+        description: "abdifatah dahir muse baarre ",
+        color: "bg-green-500",
+      },
+      {
+        id: 2,
+        name: "Chapter 2",
+        isContinued: false,
+        description: "good and better best for amazin things",
+        color: "bg-blue-500",
+      },
+      {
+        id: 3,
+        name: "Chapter 3",
+        isContinued: false,
+        description: "analysisng better anamzin things to do his job ",
+        color: "bg-yellow-300",
+      },
+    ],
   },
   {
     id: 2,
@@ -18,6 +41,29 @@ export const Sections = [
     isContined: false,
     jobNumber: 5,
     jobDone: 3,
+    chapters: [
+      {
+        id: 1,
+        name: "Chapter 1",
+        isContinued: true,
+        description: "abdifatah ",
+        color: "bg-green-500",
+      },
+      {
+        id: 2,
+        name: "Chapter 2",
+        isContinued: false,
+        description: "good a",
+        color: "bg-blue-500",
+      },
+      {
+        id: 3,
+        name: "Chapter 3",
+        isContinued: false,
+        description: "analysisng  ",
+        color: "bg-yellow-300",
+      },
+    ],
   },
   {
     id: 3,
