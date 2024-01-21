@@ -14,13 +14,13 @@ import Link from "next/link";
 
 function SectionsPage() {
   return (
-    <div className=" flex flex-col gap-12 h-[300vh] ">
+    <div className=" flex flex-col gap-12 h-fit  w-[70vw] lg:w-[40vw] py-2">
       {Sections.map((data) => (
         <div
           className={
             data.isContined
-              ? "bg-[rgb(232,168,247)]  rounded-md h-fit flex p-5"
-              : "bg-gray-300 rounded-md h-fit flex p-5"
+              ? "bg-[rgb(232,168,247)]  rounded-md h-fit flex flex-col md:flex-row p-5"
+              : "bg-gray-300 rounded-md h-fit flex p-5 flex-col md:flex-row"
           }
           key={data.id}
         >
@@ -61,9 +61,9 @@ function SectionsPage() {
                 <>
                   <Dialog>
                     <DialogTrigger>
-                      <button className="bg-white text-blue-400 rounded-md p-2  ">
+                      <DialogDescription className="bg-white text-blue-400 rounded-md p-2  ">
                         Jump here
-                      </button>
+                      </DialogDescription>
                     </DialogTrigger>
                     <DialogContent className="p-5">
                       <DialogHeader>

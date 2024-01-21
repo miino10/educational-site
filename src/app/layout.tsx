@@ -20,14 +20,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <Sidebar /> */}
-        <div className=" md:flex gap-2">
-          <div className="bg-yellow-200 w-[33vh]   ">
+        <div className=" flex gap-2 bg-gray-300 w-full justify-between ">
+          <div className=" w-[33vh] md:w-[33vh]   ">
             <Sidebar />
           </div>
-          <div className="flex-1 w-full px-9 pt-8"> {children}</div>
-          <div className="  w-[60vh]">
-            <SidebarLeft />
-          </div>
+          <div className="flex flex-col lg:flex-row">
+            <div className=" h-fit lg:hidden ">
+              <SidebarLeft />
+            </div>
+            <div className=" w-full px-9 pt-8 bg-green-400 lg:w-[45vw] lg:mx-5  "> {children}</div>
+            <div className=" hidden lg:flex  bg-yellow-300  ">
+              <SidebarLeft />
+            </div>
+          </div> 
         </div>
       </body>
     </html>

@@ -51,7 +51,7 @@ function sidebar() {
           <Image src="/please.png" alt={""} width={100} height={100} />
         </Link>
       </div>
-      <div className="bg-blue-100 h-full px-3 py-5 flex flex-col gap-5">
+      <div className="bg-blue-100 h-full md:px-3 py-5 flex flex-col gap-5">
         {menuItems.map((item) => (
           <MenuLinks item={item} />
         ))}

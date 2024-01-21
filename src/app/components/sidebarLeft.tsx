@@ -12,8 +12,8 @@ import Link from "next/link";
 
 function SidebarLeft() {
   return (
-    <div className="  w-[30vw] h-screen sticky top-0 pt-8 flex flex-col gap-12 ">
-      <div className="bg-red-200 w-full flex items-center gap-5 py-5">
+    <div className=" justify-end bg-blue-500 items-center w-full py-5 gap-2   lg:w-[35vw]  md:h-fit md:sticky md:top-0 md:pt-8 flex flex-col  md:gap-5 ">
+      <div className="bg-red-200 w-[75vw] lg:w-full flex items-center gap-5  p-5">
         <Select>
           <SelectTrigger className="w-[150px] py-5">
             <SelectValue placeholder="Courses" />
@@ -47,7 +47,7 @@ function SidebarLeft() {
       </div>
       <div>
         <div></div>
-        <div className="bg-white flex flex-col gap-5 norger-gray-600 border rounded-xl py-4 px-8">
+        <div className="bg-white flex flex-col w-[75vw] lg:w-full gap-5 norger-gray-600 border rounded-xl py-4 px-8">
           <div>
             {" "}
             <p className=" text-center lg:text-xl">
