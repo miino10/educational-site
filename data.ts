@@ -15,6 +15,11 @@ export const Sections = [
         isContinued: true,
         description: "abdifatah dahir muse baarre ",
         color: "bg-green-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "start" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
       },
       {
         id: 2,
@@ -22,6 +27,11 @@ export const Sections = [
         isContinued: false,
         description: "good and better best for amazin things",
         color: "bg-blue-500",
+        lessons: [
+          { id: 1, name: "good", status: "LOCKED" },
+          { id: 2, name: "good 2", status: "LOCKED" },
+          { id: 3, name: "good 3", status: "LOCKED" },
+        ],
       },
       {
         id: 3,
@@ -29,6 +39,11 @@ export const Sections = [
         isContinued: false,
         description: "analysisng better anamzin things to do his job ",
         color: "bg-yellow-300",
+        lessons: [
+          { id: 1, name: "better", status: "LOCKED" },
+          { id: 2, name: "better 2", status: "LOCKED" },
+          { id: 3, name: "better 3", status: "LOCKED" },
+        ],
       },
     ],
   },
@@ -48,6 +63,11 @@ export const Sections = [
         isContinued: true,
         description: "abdifatah ",
         color: "bg-green-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
       },
       {
         id: 2,
@@ -55,6 +75,11 @@ export const Sections = [
         isContinued: false,
         description: "good a",
         color: "bg-blue-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
       },
       {
         id: 3,
@@ -62,6 +87,11 @@ export const Sections = [
         isContinued: false,
         description: "analysisng  ",
         color: "bg-yellow-300",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
       },
     ],
   },
@@ -74,6 +104,44 @@ export const Sections = [
     isContined: false,
     jobNumber: 5,
     jobDone: 3,
+    chapters: [
+      {
+        id: 1,
+        name: "Chapter 1",
+        isContinued: true,
+        description: "abdifatah ",
+        color: "bg-green-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 2,
+        name: "Chapter 2",
+        isContinued: false,
+        description: "good a",
+        color: "bg-blue-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 3,
+        name: "Chapter 3",
+        isContinued: false,
+        description: "analysisng  ",
+        color: "bg-yellow-300",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+    ],
   },
   {
     id: 4,
@@ -84,6 +152,44 @@ export const Sections = [
     isContined: false,
     jobNumber: 5,
     jobDone: 3,
+    chapters: [
+      {
+        id: 1,
+        name: "Chapter 1",
+        isContinued: true,
+        description: "abdifatah ",
+        color: "bg-green-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 2,
+        name: "Chapter 2",
+        isContinued: false,
+        description: "good a",
+        color: "bg-blue-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 3,
+        name: "Chapter 3",
+        isContinued: false,
+        description: "analysisng  ",
+        color: "bg-yellow-300",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+    ],
   },
   {
     id: 5,
@@ -94,5 +200,43 @@ export const Sections = [
     isContined: false,
     jobNumber: 5,
     jobDone: 3,
+    chapters: [
+      {
+        id: 1,
+        name: "Chapter 1",
+        isContinued: true,
+        description: "abdifatah ",
+        color: "bg-green-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 2,
+        name: "Chapter 2",
+        isContinued: false,
+        description: "good a",
+        color: "bg-blue-500",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+      {
+        id: 3,
+        name: "Chapter 3",
+        isContinued: false,
+        description: "analysisng  ",
+        color: "bg-yellow-300",
+        lessons: [
+          { id: 1, name: "phrases", status: "LOCKED" },
+          { id: 2, name: "phrases 2", status: "LOCKED" },
+          { id: 3, name: "phrases 3", status: "LOCKED" },
+        ],
+      },
+    ],
   },
 ];
