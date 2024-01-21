@@ -53,7 +53,7 @@ function sidebar() {
       </div>
       <div className="bg-blue-100 h-full md:px-3 py-5 flex flex-col gap-5">
         {menuItems.map((item) => (
-          <MenuLinks item={item} />
+          <MenuLinks key={item.title} item={item} />
         ))}
       </div>
     </div>
