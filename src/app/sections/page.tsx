@@ -40,7 +40,7 @@ function SectionsPage() {
               </h1>
             </div>
             <div className="flex gap-2 items-center">
-              <Progress value={33} className="border-black border" />
+              <Progress value={33}  className="border-black border" />
               <p>
                 {data.jobDone}/{data.jobNumber}
               </p>

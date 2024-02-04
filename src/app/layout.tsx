@@ -3,6 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/sidebar";
 import SidebarLeft from "./components/sidebarLeft";
+import { ClerkProvider } from "@clerk/nextjs";
+import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+import { extractRouterConfig } from "uploadthing/server";
+import { Toaster } from "@/components/ui/toaster";
+import { ourFileRouter } from "../app/api/uploadthing/core";
+import "@uploadthing/react/styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,24 +23,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {/* <Sidebar /> */}
-        <div className=" flex gap-2  w-full justify-between ">
-          <div className=" w-[33vh] md:w-[33vh]   ">
-            <Sidebar />
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          {/* <Sidebar /> */}
+          <div className=" flex gap-2  w-full justify-between ">
+            <div className=" w-[33vh] md:w-[33vh]   ">
+              <Sidebar />
+            </div>
+            <div className="flex flex-col lg:flex-row">
+              <div className=" h-fit lg:hidden ">
+                <SidebarLeft />
+              </div>
+
+              <div className=" w-full px-9 pt-8  lg:w-[45vw] lg:mx-5  ">
+                {children}
+              </div>
+
+              <div className=" hidden lg:flex    ">
+                <SidebarLeft />
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col lg:flex-row">
-            <div className=" h-fit lg:hidden ">
-              <SidebarLeft />
-            </div>
-            <div className=" w-full px-9 pt-8  lg:w-[45vw] lg:mx-5  "> {children}</div>
-            <div className=" hidden lg:flex    ">
-              <SidebarLeft />
-            </div>
-          </div> 
-        </div>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
